@@ -1,0 +1,71 @@
+/* =============================
+  Project: The Evolution and Role of HTML
+  File: style.css
+  Author: Jeff A. Camacho
+  Course: IT 3203 – Project Milestone 1
+  Purpose: Provides consistent styling, layout, and visual design for all pages
+  Notes:
+    - Demonstrates element, class, and ID selectors
+    - Uses Flexbox for navigation layout
+    - Includes hover effects, padding/margins, borders, and box shadows
+============================= */
+
+/* -----------------------------
+   Universal and body styling
+   - Reset box sizing for layout consistency
+   - Define global font, color, and background
+----------------------------- */
+
+*{box-sizing:border-box}
+body{margin:0;font-family:'Times New Roman',Times,serif;color:#111;background:#fff;line-height:1.6}
+
+/* -----------------------------
+   Header section
+   - Adds subtle gradient and border for clean, modern look
+   - Styles main title
+----------------------------- */
+header{border-bottom:1px solid #efefef;background:linear-gradient(180deg,#fff,#fafafa)}
+header h1{margin:0;padding:1rem 1.25rem .5rem;font-size:2rem}
+/* -----------------------------
+   Navigation bar
+   - Uses Flexbox for horizontal layout with spacing
+   - Styles links with padding, borders, and hover effects
+----------------------------- */
+nav{padding:.5rem 1rem 1rem}nav ul{display:flex;gap:1rem;list-style:none;margin:0;padding:0;flex-wrap:wrap}
+nav a{text-decoration:none;color:#222;padding:.6rem .9rem;border-radius:999px;border:1px solid #e8e8e8;background:#fff}
+nav a:hover{background:#111;color:#fff;box-shadow:0 6px 16px rgba(0,0,0,.12)}
+/* -----------------------------
+   Container class
+   - Centers page content and limits width
+----------------------------- */
+.container{max-width:1100px;margin:0 auto;padding:1.25rem}
+/* -----------------------------
+   Card class
+   - Used for each content block
+   - Adds border, rounded corners, and subtle shadow
+----------------------------- */
+.card{background:#fff;border:1px solid #e6e6e6;border-radius:12px;box-shadow:0 4px 18px rgba(0,0,0,.06);padding:1.25rem;margin:0 0 2rem}
+/* -----------------------------
+   Figure styling
+   - Frames images with border and caption
+   - Keeps consistent appearance across pages
+----------------------------- */
+
+.figure{border:1px solid #eee;border-radius:10px;box-shadow:0 3px 12px rgba(0,0,0,.05);padding:.5rem;background:#fff;margin:1rem 0}
+
+/* Ensures all images scale correctly and maintain aspect ratio */
+.figure img{border-radius:8px;display:block;max-width:100%;height:auto}
+
+/* Caption style for image descriptions */
+.figure figcaption{font-size:.9rem;color:#555;margin-top:.5rem}
+/* -----------------------------
+   Footer styling
+   - Simple border and light background
+   - Consistent spacing with page layout
+----------------------------- */
+footer{padding:1.25rem;border-top:1px solid #efefef;background:#fafafa}
+/* -----------------------------
+   Link styling (general)
+   - Adds consistent blue color for readability
+----------------------------- */
+a{color:#0b57d0}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!-- =============================
+  Project: The Evolution and Role of HTML
+  File: key-concepts.html
+  Author: Jeff A. Camacho
+  Course: IT 3203 – Project Milestone 1
+  Purpose: Defines and explains key concepts and terms related to HTML
+  Notes: Demonstrates use of a definition list (<dl>) to present structured information
+============================= -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Key-Concepts</title>
+  <!-- Single external stylesheet applies consistent design across all pages -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Site header with global navigation (consistent on every page) -->
+  <header>
+    <h1>The Evolution and Role of HTML</h1>
+    <!-- Navigation menu styled with Flexbox for horizontal layout -->
+    <nav id="topnav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="evolution.html">Early Evolution</a></li>
+        <li><a href="html5.html">HTML5 Today</a></li>
+        <li><a href="key-concepts.html">Key Concepts</a></li>
+        <li><a href="references.html">References</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main section holds the definition list of web development terms -->
+  <main>
+    <div class="container">
+      
+<section class="card">
+  <h2>Key Concepts</h2>
+  <dl>
+    <dt>HTML</dt>
+    <dd>The markup language that structures content so browsers can render text, images, and links.</dd>
+
+    <dt>Element, Tag, Attribute</dt>
+    <dd>Elements are defined by tags; attributes modify how elements behave or provide metadata.</dd>
+
+    <dt>Hyperlink (&lt;a&gt;)</dt>
+    <dd>The feature that interconnects documents, turning separate pages into the Web.</dd>
+
+    <dt>Semantics</dt>
+    <dd>Using meaningful elements (e.g., <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>) to express structure.</dd>
+
+    <dt>DOM</dt>
+    <dd>An in-memory tree representation of the document that scripts can read and modify.</dd>
+
+    <dt>Separation of Concerns</dt>
+    <dd>HTML for structure and meaning, CSS for presentation, JavaScript for behavior.</dd>
+
+    <dt>Living Standard</dt>
+    <dd>HTML is updated continuously by WHATWG and implemented by major browsers.</dd>
+  </dl>
+</section>
+
+    </div>
+  </main>
+
+  <!-- Footer: appears on all pages with required course credit and link -->
+  <footer>
+    <p>
+      This website was created for IT 3203: Web Development — Kennesaw State University.<br>
+      <a href="https://ksuweb.github.io/IT3203/" target="_blank" rel="noopener">Visit Course Page</a>
+    </p>
+  </footer>
+</body>
+</html>
