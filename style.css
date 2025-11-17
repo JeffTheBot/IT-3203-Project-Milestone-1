@@ -54,10 +54,13 @@ nav a:hover{background:#111;color:#fff;box-shadow:0 6px 16px rgba(0,0,0,.12)}
 .figure{border:1px solid #eee;border-radius:10px;box-shadow:0 3px 12px rgba(0,0,0,.05);padding:.5rem;background:#fff;margin:1rem 0}
 
 /* Ensures all images scale correctly and maintain aspect ratio */
-.figure img{border-radius:8px;display:block;max-width:100%;height:auto}
+.figure img{
+    border-radius:8px;
+    display:block;
+    max-width:100%;
+    height:auto
+}
 
-/* Caption style for image descriptions */
-.figure figcaption{font-size:.9rem;color:#555;margin-top:.5rem}
 
 /* remember it can condensed image size for large illustrations */
 .img-medium{
@@ -67,6 +70,8 @@ nav a:hover{background:#111;color:#fff;box-shadow:0 6px 16px rgba(0,0,0,.12)}
   display:block;
   margin:0 auto 1.5rem;
 }
+/* Caption style for image descriptions */
+.figure figcaption{font-size:.9rem;color:#555;margin-top:.5rem}
 
 /* -----------------------------
    Footer styling
