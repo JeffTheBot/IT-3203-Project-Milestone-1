@@ -59,7 +59,7 @@ nav a:hover{background:#111;color:#fff;box-shadow:0 6px 16px rgba(0,0,0,.12)}
 /* Caption style for image descriptions */
 .figure figcaption{font-size:.9rem;color:#555;margin-top:.5rem}
 
-/* Condensed image size for large illustrations */
+/* remember it can condensed image size for large illustrations */
 .img-medium{
   max-width:250px;
   width:100%;
