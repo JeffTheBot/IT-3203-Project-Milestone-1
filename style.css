@@ -61,7 +61,7 @@ nav a:hover{background:#111;color:#fff;box-shadow:0 6px 16px rgba(0,0,0,.12)}
 
 /* Condensed image size for large illustrations */
 .img-medium{
-  max-width:500px;
+  max-width:250px;
   width:100%;
   height:auto;
   display:block;
