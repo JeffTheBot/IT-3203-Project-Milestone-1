@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!-- =============================
+  Project: The Evolution and Role of HTML
+  File: html5.html
+  Author: Jeff A. Camacho
+  Course: IT 3203 – Project Milestone 1 & 2
+  Purpose: Explains HTML5 and the Living Standard
+  Notes: Uses shared external CSS (style.css) for consistent design across pages
+============================= -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Html5 Today</title>
+  <!-- Link to the single external stylesheet required by the assignment -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Site header with global navigation (consistent on every page) -->
+  <header>
+    <h1>The Evolution and Role of HTML</h1>
+    <!-- ID used to demonstrate an ID selector in CSS -->
+    <nav id="topnav">
+      <ul>
+        <!-- Primary navigation links to required pages -->
+        <li><a href="index.html">Home</a></li>
+        <li><a href="evolution.html">Early Evolution</a></li>
+        <li><a href="html5.html">HTML5 Today</a></li>
+        <li><a href="key-concepts.html">Key Concepts</a></li>
+        <li><a href="references.html">References</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+
+      </ul>
+    </nav>
+  </header>
+
+
+   <!-- Main content area; .container centers content and sets max width -->
+  <main>
+    <div class="container">
+      
+      <!-- Section: Overview of HTML5 and the Living Standard -->
+      <section class="card">
+  <h2>HTML5 and the Living Standard</h2>
+  <p>
+    Developed roughly from 2008 to 2014, HTML5 introduced semantic elements
+    (<code>&lt;header&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;footer&gt;</code>),
+    native <code>&lt;audio&gt;</code>/<code>&lt;video&gt;</code>, and the
+    <code>&lt;canvas&gt;</code> API. These reduced reliance on plugins and made the web a
+    platform for apps and multimedia. Today, the WHATWG maintains HTML as a
+    <em>Living Standard</em> with continuous updates adopted by major browsers.
+  </p>
+  <!-- .card class provides border, padding, and subtle shadow per style.css -->
+</section>
+
+<section class="grid-2">
+  <section class="card">
+    <h3>Semantic Structure</h3>
+    <ul>
+      <li>Clear intent and better accessibility</li>
+      <li>Improved SEO and machine readability</li>
+      <li>Cleaner, maintainable code for teams</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h3>Native Capabilities</h3>
+    <ul>
+      <li>Audio/Video without plugins</li>
+      <li>Enhanced forms and validation</li>
+      <li>Canvas/SVG for graphics and games</li>
+    </ul>
+  </section>
+</section>
+
+
+<section class="card">
+  <h2>HTML + CSS + JavaScript</h2>
+ <p>
+  HTML provides structure and meaning, CSS defines presentation and layout, and JavaScript enables
+  interactivity and application logic. Together, they power modern, accessible, and responsive web
+  experiences across devices. This separation of concerns keeps websites easier to maintain,
+  extend, and optimize as the web continues to evolve.
+</p>
+
+
+</section>
+
+    </div>
+  </main>
+
+  <!-- Site footer with course info (consistent on every page) -->
+  <footer>
+    <p>
+      Developed by Jeff Camacho for IT 3203: Web Development - Kennesaw State University.<br>
+      <a href="https://ksuweb.github.io/IT3203/" target="_blank" rel="noopener">Visit Course Page</a>
+    </p>
+  </footer>
+</body>
+</html>

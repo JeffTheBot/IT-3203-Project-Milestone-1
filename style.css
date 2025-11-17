@@ -1,0 +1,189 @@
+/* =============================
+  Project: The Evolution and Role of HTML
+  File: style.css
+  Author: Jeff A. Camacho
+  Course: IT 3203 – Project Milestone 1 & 2
+  Purpose: Provides consistent styling, layout, and visual design for all pages
+  Notes:
+    - Demonstrates element, class, and ID selectors
+    - Uses Flexbox for navigation layout
+    - Includes hover effects, padding/margins, borders, and box shadows
+============================= */
+
+/* -----------------------------
+   Universal and body styling
+   - Reset box sizing for layout consistency
+   - Define global font, color, and background
+----------------------------- */
+
+*{box-sizing:border-box}
+body{margin:0;font-family:'Times New Roman',Times,serif;color:#111;background:#fff;line-height:1.6}
+
+/* -----------------------------
+   Header section
+   - Adds subtle gradient and border for clean, modern look
+   - Styles main title
+----------------------------- */
+header{border-bottom:1px solid #efefef;background:linear-gradient(180deg,#fff,#fafafa)}
+header h1{margin:0;padding:1rem 1.25rem .5rem;font-size:2rem}
+/* -----------------------------
+   Navigation bar
+   - Uses Flexbox for horizontal layout with spacing
+   - Styles links with padding, borders, and hover effects
+----------------------------- */
+nav{padding:.5rem 1rem 1rem}nav ul{display:flex;gap:1rem;list-style:none;margin:0;padding:0;flex-wrap:wrap}
+nav a{text-decoration:none;color:#222;padding:.6rem .9rem;border-radius:999px;border:1px solid #e8e8e8;background:#fff}
+nav a:hover{background:#111;color:#fff;box-shadow:0 6px 16px rgba(0,0,0,.12)}
+/* -----------------------------
+   Container class
+   - Centers page content and limits width
+----------------------------- */
+.container{max-width:1100px;margin:0 auto;padding:1.25rem}
+/* -----------------------------
+   Card class
+   - Used for each content block
+   - Adds border, rounded corners, and subtle shadow
+----------------------------- */
+.card{background:#fff;border:1px solid #e6e6e6;border-radius:12px;box-shadow:0 4px 18px rgba(0,0,0,.06);padding:1.25rem;margin:0 0 2rem}
+/* -----------------------------
+   Figure styling
+   - Frames images with border and caption
+   - Keeps consistent appearance across pages
+----------------------------- */
+
+.figure{border:1px solid #eee;border-radius:10px;box-shadow:0 3px 12px rgba(0,0,0,.05);padding:.5rem;background:#fff;margin:1rem 0}
+
+/* Ensures all images scale correctly and maintain aspect ratio */
+.figure img{border-radius:8px;display:block;max-width:100%;height:auto}
+
+/* Caption style for image descriptions */
+.figure figcaption{font-size:.9rem;color:#555;margin-top:.5rem}
+
+/* Condensed image size for large illustrations */
+.img-medium{
+  max-width:500px;
+  width:100%;
+  height:auto;
+  display:block;
+  margin:0 auto 1.5rem;
+}
+
+/* -----------------------------
+   Footer styling
+   - Simple border and light background
+   - Consistent spacing with page layout
+----------------------------- */
+footer{padding:1.25rem;border-top:1px solid #efefef;background:#fafafa}
+/* -----------------------------
+   Link styling (general)
+   - Adds consistent blue color for readability
+----------------------------- */
+a{color:#0b57d0}
+
+
+/* -----------------------------
+   Layout helpers
+   - Two-column grid used on HTML5 page and elsewhere
+----------------------------- */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+
+/* -----------------------------
+   Quiz form styling
+   - Professional, clean look for form controls
+----------------------------- */
+.quiz-card {
+  max-width: 800px;
+  margin: 0 auto 2rem;
+}
+
+.quiz-card h2 {
+  margin-top: 0;
+}
+
+.quiz-question {
+  margin-bottom: 1.5rem;
+}
+
+.quiz-question h3 {
+  margin-bottom: 0.5rem;
+}
+
+.quiz-question p {
+  margin: 0 0 0.5rem;
+}
+
+/* Form controls */
+.quiz-question input[type="text"] {
+  width: 100%;
+  max-width: 320px;
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.quiz-question label {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.quiz-actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+/* Buttons */
+button {
+  padding: 0.6rem 1.1rem;
+  border-radius: 999px;
+  border: 1px solid #e8e8e8;
+  background: #111;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #333;
+}
+
+/* Results area */
+#quiz-results {
+  margin-top: 1.5rem;
+}
+
+.result-summary {
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+}
+
+.result-pass {
+  color: #0b8043;
+}
+
+.result-fail {
+  color: #c5221f;
+}
+
+.result-detail {
+  margin-bottom: 0.5rem;
+}
+
+.result-correct {
+  color: #0b8043;
+}
+
+.result-incorrect {
+  color: #c5221f;
+}
+
+
